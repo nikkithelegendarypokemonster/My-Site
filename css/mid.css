@@ -1,0 +1,56 @@
+.mid{
+  padding: 2rem;
+}
+.mid>h1{
+  font-size: 2rem;
+}
+.grid_container{
+  display: grid;
+  grid-template-columns: auto auto ;
+  grid-column-gap: 20em;
+  grid-row-gap: 6em;
+  color:var(--blue);
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+.grid_container p{
+  color:var(--blue);
+}
+
+.grid_container>.item{
+  max-width: 8em;
+  height: auto;
+  transition: box-shadow 0.2s;
+}
+
+.grid_container>.item:hover{
+  max-width: 8em;
+  height: auto;
+  box-shadow: 10px 8px 17px -1px rgba(100,89,89,0.66);
+-webkit-box-shadow: 10px 8px 17px -1px rgba(100,89,89,0.66);
+-moz-box-shadow: 10px 8px 17px -1px rgba(100,89,89,0.66);
+}
+
+.item>a{
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+}
+.item>a>img{
+  width: 100%;
+  height:100%;
+}
+
+/*scroll elements here*/
+.scroll{
+  /*element is invisible*/
+  opacity: 0;
+  transition: opacity 1s;
+}
+.scrolled{
+  /*element is visible*/
+  opacity: 1;
+}
