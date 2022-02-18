@@ -1,0 +1,21 @@
+:root {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  --blue: #2426a2;
+  font-family: "Lucida Console", "Courier New", monospace;
+  scroll-behavior: smooth;
+}
+body{
+  margin: 0px;
+}
+p{
+  color: white;
+
+}
+h1,h2,h3,h4{
+  display: block;
+  font-size: 3rem;
+  color:var(--blue);
+  margin: 0px;
+}

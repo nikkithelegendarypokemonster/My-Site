@@ -1,0 +1,181 @@
+#content>div>* {
+  color: white;
+  font-size: 2rem;
+}
+
+#content {
+  background-color:rgba(0, 0, 0, 0.8);
+  /*margin: 20px;*/
+}
+#introHead>h1 {
+  display: block;
+  margin:0;
+  margin-left: 10px;
+}
+
+#introHead>.intro-container {
+  display: flex;
+  flex-direction: row;
+  color: black;
+  margin: 2rem;
+}
+
+#introHead>.intro-container>.intro_desc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  line-height: 2em;
+}
+
+/*slider animation: current=show */
+#slider {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+#introHead>.intro-container>#slider{
+    width: 10rem;
+    height: 15rem;
+}
+#introHead>.intro-container>div>img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  width: 100%;
+  opacity: 0;
+  /*clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);*/
+  height: auto;
+  transition: opacity 1s;
+}
+
+#introHead>.intro-container>div>.current {
+  position: relative;
+  visibility: visible;
+  width: 10rem;
+  /*clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);*/
+  height: auto;
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+/*===============================================*/
+#introHead>.intro-container>div>p {
+  font-size: 1rem;
+  color: white;
+  margin: 0% 10% 0% 10%;
+  padding: 0;
+  z-index: 1;
+}
+/*=======================================================*/
+#hobbyHead>h1{
+  margin: 0;
+  margin-left: 10px;
+}
+/*
+#hobbyHead>ul {
+  position: relative;
+  list-style-type: decimal;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  column-count: 2;
+  margin: 0 10px 0 10px;
+  padding:0;
+  text-align: center;
+}
+.hobbies {
+  list-style-type: decimal;
+  list-style-position: inside;
+  margin-bottom: 3rem;
+  font-size: 1rem;
+}
+*/
+.hobbyContainer{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: 10em;
+  grid-row-gap: 1em;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+
+}
+.hobbies{
+  text-align: center;
+  max-width: 3em;
+  height: auto;
+  transition: box-shadow 0.2s,background-color 0.2s;
+}
+.hobbyContainer .hobbies:hover{
+  text-align: center;
+  max-width: 3em;
+  height: auto;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 10px 8px 17px -1px rgba(100,89,89,0.66);
+-webkit-box-shadow: 10px 8px 17px -1px rgba(100,89,89,0.66);
+-moz-box-shadow: 10px 8px 17px -1px rgba(100,89,89,0.66);
+}
+.hobbyContainer .hobbies:last-child{
+justify-self: center;
+ width: calc(200px - 20px);
+ grid-column-start: span 2;
+}
+.hobbyContainer .hobbies>p{
+  display: block;
+  font-size: 1rem;
+}
+.hobbies>img{
+  width: 100%;
+  height:100%;
+}
+/*========================================================================*/
+#expHead>h1{
+  margin: 0;
+  margin-left: 10px;
+}
+.lang_container{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: center;
+  align-items: center;
+  grid-column-gap: 5em;
+}
+.lang_container>.lang_items{
+  max-width: 7rem;
+  height: auto;
+  text-align: center;
+}
+.aux{
+  display: grid;
+  grid-template-columns: auto auto auto ;
+  justify-content: center;
+  align-items: center;
+  grid-column-gap: 5em;
+}
+.aux .lang_items:last-child{
+justify-self: center;
+ width: calc(200px - 20px);
+ grid-column-start: span 3;
+}
+.lang_container>.lang_items>img{
+  width:100%;
+  height: 100%;
+}
+.lang_container>.lang_items>p{
+  font-size: 0.5em;
+}
+.exp_desc{
+  width: 80%;
+  margin: auto;
+}
+.exp_desc>p{
+  font-size: 1rem;
+}
+.exp_desc>ul{
+  list-style-type: decimal;
+  font-size: 1rem;
+  line-height: 2rem;
+}
