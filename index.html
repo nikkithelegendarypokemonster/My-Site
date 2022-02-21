@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="./css/title.css">
   <link rel="stylesheet" href="./css/mid.css">
   <link rel="stylesheet" href="./css/content.css">
+  <link rel="stylesheet" href="./css/timeline.css">
   <script src="./js/scroll.js" charset="utf-8" defer></script>
   <script src="./js/slide.js" charset="utf-8" defer></script>
   <!--<script src="./js/color_mapping.js" charset="utf-8" defer></script>-->
@@ -52,17 +53,19 @@
           </p>
           <div id="contactHead" class="contact_container">
             <p id="contactHead" class="text_desc">Contact me:</p>
-            <div class="contact">
-              <a href="https://www.facebook.com/profile.php?id=100069311299368">
-                <img src="./image/fb.png" alt="">
-                <p class="text_desc">Facebook</p>
-              </a>
-            </div>
-            <div class="contact">
-              <a href="https://github.com/nikkithelegendarypokemonster">
-                <img src="./image/github.png" alt="">
-                <p class="text_desc">Github</p>
-              </a>
+            <div class="contact_items">
+              <div class="item">
+                <a class="c_link" href="https://www.facebook.com/profile.php?id=100069311299368">
+                  <img src="./image/fb.png" alt="">
+                  <p>Facebook</p>
+                </a>
+              </div>
+              <div class="item">
+                <a class="c_link" href="https://github.com/nikkithelegendarypokemonster">
+                  <img src="./image/github.png" alt="">
+                  <p>Github</p>
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -124,6 +127,25 @@
           </p>
         </div>
       </div>
+      <h1>Education</h1>
+      <div class="educ_container">
+
+        <div class="timeline">
+          <div class="t-container left">
+            <div class="t-content">
+              <h2>2015-2018</h2>
+              <p>HS- San Felipe Neri Parochial School</p>
+            </div>
+          </div>
+          <div class="t-container right">
+            <div class="t-content">
+              <h2>2019-2022</h2>
+              <p>Technological University of the Philippines(TUP)</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
     <div id="hobbyHead" class="hobby">
       <!--Hobby Content-->
@@ -161,24 +183,53 @@
     <div id="expHead" class="exp">
       <!--Experience Content show languages i have learned-->
       <h1>Experience</h1>
+
       <div class="lang_container">
+
         <div class="lang_items">
           <img src="./image/java.png" alt="">
           <p>Javascript</p>
+          <!--put here experience bar and brief explanation-->
+          <p class="progress">Level: <progress value="75" max="100"></progress> </p>
+          <p>- I am quite an intermediate user in using Javascript
+            Language. I created many projects using this usually React Application's.
+          </p>
         </div>
+
         <div class="lang_items">
           <img src="./image/node.png" alt="">
           <p>NodeJS</p>
+          <p class="progress">Level: <progress value="65" max="100"></progress> </p>
+          <p>- I am quite an intermediate user in using NodeJS.
+            I use this with Express Framework to build my backend.
+            I can do Routing, Setting up Node Server, using CORS and Helmet,
+            Basic JWT Authentication and etc.
+          </p>
         </div>
+
         <div class="lang_items">
           <img src="./image/c++.png" alt="">
           <p>C++</p>
+          <p class="progress">Level: <progress value="65" max="100"></progress> </p>
+          <p>- I am quite an experienced user in using C++.
+            Since 2019 I have been continously using C++ for practicing
+            my logic formulation and creating console games using C++.
+          </p>
         </div>
+
         <div class="lang_items">
           <img src="./image/c.png" alt="">
           <p>C</p>
+          <p class="progress">Level: <progress value="95" max="100"></progress> </p>
+          <p>- I am quite an experienced user in using C.
+            Its my first programming language so my proficiency level
+            is quite good and I am very familiar with its structure and i know
+            how to use its libraries.
+          </p>
         </div>
+
       </div>
+
       <div class="exp_desc">
         <p>I am a intermediate developer whose Experienceis mainly Javascript, NodeJS,
           C++, C. I am inclined at Web development. <br>I also know:</br>
@@ -188,26 +239,28 @@
           <li>Agile Development</li>
           <li>Google API</li>
           <li>Office Products</li>
+          <li>Mongo DB</li>
+          <li>Express Framework</li>
         </ul>
         <p>My other Auxiliary Skills are:</p>
-                    <div class="lang_container aux">
-                      <div class="lang_items">
-                        <img src="./image/html.png" alt="">
-                        <p>HTML</p>
-                      </div>
-                      <div class="lang_items">
-                        <img src="./image/css.png" alt="">
-                        <p>CSS</p>
-                      </div>
-                      <div class="lang_items">
-                        <img src="./image/apps.svg" alt="">
-                        <p>Google Apps Script</p>
-                      </div>
-                      <div class="lang_items">
-                        <img src="./image/visual.png" alt="">
-                        <p>Visual C++ & VB.NET</p>
-                      </div>
-                    </div>
+        <div class="aux">
+          <div class="lang_items">
+            <img src="./image/html.png" alt="">
+            <p>HTML</p>
+          </div>
+          <div class="lang_items">
+            <img src="./image/css.png" alt="">
+            <p>CSS</p>
+          </div>
+          <div class="lang_items">
+            <img src="./image/apps.svg" alt="">
+            <p>Google Apps Script</p>
+          </div>
+          <div class="lang_items">
+            <img src="./image/visual.png" alt="">
+            <p>Visual C++ & VB.NET</p>
+          </div>
+        </div>
       </div>
     </div>
     <div id="contactHead" class="contact">
