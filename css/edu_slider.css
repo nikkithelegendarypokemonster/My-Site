@@ -1,0 +1,128 @@
+.ed_slide_container{
+  width: 20rem;
+  margin:0px auto;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+.edu_slider:hover{
+  opacity: 0.5;
+  transition: opacity 0.5s ease-in-out;
+}
+.edu_slider{
+  display: flex;
+  flex-direction: row;
+  width:20rem;
+  height:auto;
+}
+.edu_slides{
+  width:100%;
+  height:100%;
+}
+.ed_slide_container #edu_desc{
+  display: block;
+  position: absolute;
+  margin: 0;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  opacity: 0;
+  z-index: 13;
+  font-size: 1rem;
+  transition: opacity 0.3s ease;
+}
+.ed_slide_container:hover #edu_desc{
+  opacity: 1;
+  color: black;
+  font-size: 1rem;
+}
+#prev{
+  position: absolute;
+  top:50%;
+  left:5%;
+  color: white;
+  opacity: 0.5;
+  z-index: 12;
+  cursor: pointer;
+}
+#next{
+  position: absolute;
+  top:50%;
+  right: 5%;
+  color: white;
+  opacity: 0.5;
+  z-index: 12;
+  cursor: pointer;
+}
+
+
+/* =============================================================== */
+
+
+.ed_slide_container2{
+  width: 20rem;
+  margin:0px auto;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+.edu_slider2:hover{
+  opacity: 0.5;
+  transition: opacity 0.5s ease-in-out;
+}
+.edu_slider2{
+  display: flex;
+  flex-direction: row;
+  width:20rem;
+  height:auto;
+}
+.edu_slides2{
+  width:100%;
+  height:100%;
+}
+.ed_slide_container2 #edu_desc2{
+  display: block;
+  position: absolute;
+  margin: 0;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  opacity: 0;
+  z-index: 13;
+  font-size: 1rem;
+  transition: opacity 0.3s ease;
+}
+.ed_slide_container2:hover #edu_desc2{
+  opacity: 1;
+  color: black;
+  font-size: 1rem;
+}
+
+
+
+
+
+#prev2{
+  position: absolute;
+  top:50%;
+  left:5%;
+  color: white;
+  opacity: 0.5;
+  z-index: 12;
+  cursor: pointer;
+}
+#next2{
+  position: absolute;
+  top:50%;
+  right: 5%;
+  color: white;
+  opacity: 0.5;
+  z-index: 12;
+  cursor: pointer;
+}
