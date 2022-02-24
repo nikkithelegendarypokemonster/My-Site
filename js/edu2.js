@@ -12,14 +12,12 @@ const dimension2=images2[0].clientWidth;
 
 edu_desc2.innerHTML=images2[0].name;
 prev2.addEventListener("click",()=>{
-  if(counter2<0) return
   edu_container2.style.transition="transform 0.4s ease-in-out"
   counter2--;
   edu_container2.style.transform='translateX('+(-dimension2*counter2)+'px)'
   edu_desc2.innerHTML=images2[counter2].name;
 })
 next2.addEventListener("click",()=>{
-  if(counter2>images2.length-1) return
   edu_container2.style.transition="transform 0.4s ease-in-out"
   counter2++;
   edu_container2.style.transform='translateX('+(-dimension2*counter2)+'px)'
