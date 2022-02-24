@@ -7,8 +7,7 @@ const handleScroll=()=>{
   for (var i = 0; i < elements.length; i++) {
 //    console.log(elements[i].getBoundingClientRect());
     //check if element is visible on scroll height/2
-    let condition=checkElementVisible(elements[i])
-    if(condition){
+    if(checkElementVisible(elements[i])){
       //element handle is element[i]
       //put scrolled class here
       elements[i].classList.add("scrolled")
@@ -25,15 +24,13 @@ window.addEventListener("scroll",()=>{
 })
 
 //======================================================================
-window.addEventListener("load",()=>{
+const handleImageStyle=()=>{
   var image=document.querySelector("#introHead .intro-container");
-    var actualImage=document.querySelector("#introHead .intro-container #slider");
+  var actualImage=document.querySelector("#introHead .intro-container #slider .current");
   //console.log(image);
   //console.log(document.documentElement.clientWidth);
-  console.log(screen.width);
   if(screen.width<=425){
-    console.log("true");
     image.style.cssText="display: flex;flex-direction: column;justify-content:center;align-items:center;color: black;margin: 2rem;";
-    //actualImage.style.cssText="display: flex;flex-direction: column;justify-content:center;"
+    actualImage.style.cssText="display: flex;flex-direction: column;justify-content:center;border-radius:50%;"
   }
-})
+}
